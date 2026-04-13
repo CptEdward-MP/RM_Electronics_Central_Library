@@ -1,0 +1,71 @@
+Create a file named:
+
+timing_report.txt
+
+
+Use this clock list:
+
+clocks = [1.0, 1.2, 1.5, 2.0]
+
+
+Use formula:
+
+wns = 0.2 - (0.18 * clock)
+
+
+File format must be EXACTLY:
+
+Clock: 1.0
+WNS: 0.02
+
+Clock: 1.2
+WNS: -0.016
+
+Clock: 1.5
+WNS: -0.07
+
+Clock: 2.0
+WNS: -0.16
+
+
+(Values will be whatever formula gives — don’t hardcode.)
+
+Notice:
+
+Blank line between entries.
+
+Proper newline usage.
+
+📌 PART B — Parse Report
+
+Your script must:
+
+Open file in read mode.
+
+Extract only WNS lines.
+
+Convert them to float.
+
+Store them in a list.
+
+Count:
+
+PASS (wns >= 0)
+
+FAIL (wns < 0)
+
+Find worst WNS using min().
+
+Do NOT:
+
+Assume fixed line numbers.
+
+Use slicing hacks.
+
+Hardcode positions.
+
+📌 PART C — Print Summary (Exact Format)
+Total clocks analyzed: 4
+Worst WNS: -0.16
+PASS count: X
+FAIL count: Y
