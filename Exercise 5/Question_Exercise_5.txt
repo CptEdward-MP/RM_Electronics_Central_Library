@@ -1,0 +1,84 @@
+PART A — Generate Report
+
+Same as before:
+
+clocks = [1.0, 1.2, 1.5, 2.0]
+wns = 0.2 - (0.18 * clock)
+
+
+Same file format:
+
+Clock: 1.0
+WNS: 0.02
+
+Clock: 1.2
+WNS: -0.016
+...
+
+📌 PART B — Parse and Compute
+
+From parsed WNS values, compute:
+
+Total clocks analyzed
+
+Worst WNS
+
+PASS count
+
+FAIL count
+
+Average WNS
+
+Failure percentage
+
+📌 Required Calculations
+Average WNS
+average
+=
+∑
+𝑤
+𝑛
+𝑠
+total clocks
+average=
+total clocks
+∑wns
+	​
+
+
+Must handle empty list safely.
+
+Failure Percentage
+\text{failure %} = \frac{\text{fail count}}{\text{total clocks}} \times 100
+
+Format to 2 decimal places.
+
+📌 PART C — Required Output Format (Exact)
+
+Example:
+
+Total clocks analyzed: 4
+Worst WNS: -0.16
+Average WNS: -0.06
+PASS count: 1
+FAIL count: 3
+Failure percentage: 75.00%
+
+
+Formatting:
+
+WNS values → 3 decimal places
+
+Percentage → 2 decimal places
+
+🚫 Do NOT
+
+Re-open file multiple times unnecessarily
+
+Hardcode counts
+
+Use slicing hacks
+
+Assume fixed line positions
+
+Forget defensive checks

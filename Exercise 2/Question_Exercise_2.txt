@@ -1,0 +1,94 @@
+Scenario
+
+You are evaluating one design at multiple clock periods.
+
+Clock periods (in ns):
+
+1.0
+1.2
+1.5
+2.0
+
+For simplicity, assume WNS behaves like this:
+
+WNS = 0.1 − (0.2 × clock_period)
+
+(This is artificial just for practice.)
+
+Part A — Create a List
+
+Create a list named clock_periods containing:
+[1.0, 1.2, 1.5, 2.0]
+
+Print the entire list.
+
+Print only the first and last elements of the list.
+
+Part B — Loop and Compute Values
+
+Using a for loop:
+
+For each clock period:
+
+Compute:
+frequency = 1 / clock_period
+
+Compute:
+wns = 0.1 - (0.2 * clock_period)
+
+Compute:
+timing_clean = (wns >= 0)
+
+Print for each clock:
+
+Clock: X
+Frequency: Y
+WNS: Z
+Timing Clean: True/False
+
+Format it cleanly.
+
+Part C — Store Results Properly
+
+Now instead of just printing, store results.
+
+Create an empty list named results.
+
+For each clock:
+
+Create a dictionary like this:
+
+{
+"clock": value,
+"frequency": value,
+"wns": value,
+"timing_clean": value
+}
+
+Append that dictionary to results.
+
+After the loop:
+Print the entire results list.
+
+Part D — Count Timing Failures
+
+After building results:
+
+Count how many configurations failed timing.
+
+Print:
+
+Total configs: X
+Failures: Y
+
+Rules
+
+Use proper indentation
+
+Use f-strings
+
+Do not hardcode index numbers except for first/last in Part A
+
+Keep structure clean
+
+No unnecessary complexity

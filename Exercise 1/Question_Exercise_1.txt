@@ -1,0 +1,74 @@
+Part A — Basic Variable Assignment
+
+Write a Python program that:
+
+Creates the following variables:
+
+design_name → string → value: "alu_core"
+
+clock_period → float → value: 1.5
+
+area → integer → value: 125000
+
+wns → float → value: -0.035
+
+Print each variable on a separate line using print().
+
+Expected output format (structure only, not exact wording requirement):
+
+Design: alu_core
+Clock: 1.5
+Area: 125000
+WNS: -0.035
+
+You may choose your wording, but keep it clean and structured.
+
+Part B — Arithmetic and Derived Values
+
+Extend the same program:
+
+Compute clock frequency from period.
+
+Formula:
+frequency (in GHz) = 1 / clock_period
+
+Print the frequency.
+
+Compute a boolean variable:
+timing_clean → True if wns >= 0
+timing_clean → False otherwise
+
+Print timing_clean.
+
+Part C — Conditional Statement
+
+Add logic:
+
+If timing_clean is True:
+print "Timing Passed"
+
+Else:
+print "Timing Failed"
+
+Important:
+Use proper Python indentation and syntax.
+No semicolons.
+Colon after if.
+
+Part D — Type Inspection (Important Concept)
+
+Use the built-in function:
+
+type(variable_name)
+
+Print the type of:
+
+design_name
+
+clock_period
+
+area
+
+timing_clean
+
+This will help you understand Python’s automatic typing.
