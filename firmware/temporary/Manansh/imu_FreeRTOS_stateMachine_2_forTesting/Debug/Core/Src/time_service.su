@@ -1,0 +1,4 @@
+../Core/Src/time_service.c:16:6:time_init	4	static
+../Core/Src/time_service.c:24:10:time_now_ms	8	static
+../Core/Src/time_service.c:33:6:time_expired	16	static
+../Core/Src/time_service.c:41:6:Delay	16	static

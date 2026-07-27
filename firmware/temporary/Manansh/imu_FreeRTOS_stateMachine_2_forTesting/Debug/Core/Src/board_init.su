@@ -1,0 +1,3 @@
+../Core/Src/board_init.c:24:8:imu_get	4	static
+../Core/Src/board_init.c:29:11:i2c_bus_get	4	static
+../Core/Src/board_init.c:35:6:imu_system_init	8	static
