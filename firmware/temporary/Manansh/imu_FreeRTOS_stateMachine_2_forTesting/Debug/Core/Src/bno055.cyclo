@@ -1,0 +1,11 @@
+../Core/Src/bno055.c:8:21:bno_rd16	4
+../Core/Src/bno055.c:32:6:bno_init	3
+../Core/Src/bno055.c:45:14:bno_check_chip_id	4
+../Core/Src/bno055.c:66:14:bno_set_mode	3
+../Core/Src/bno055.c:81:14:bno_set_and_verify_mode	3
+../Core/Src/bno055.c:104:14:bno_read_9val	19
+../Core/Src/bno055.c:137:14:bno_read_euler	8
+../Core/Src/bno055.c:152:14:bno_read_gyro	8
+../Core/Src/bno055.c:167:14:bno_read_accel	8
+../Core/Src/bno055.c:182:14:bno_read_quat	10
+../Core/Src/bno055.c:199:14:bno_read_gravity	8

@@ -1,0 +1,5 @@
+../Core/Src/pcb.c:35:10:pcb_imu_i2c_addr	4	static
+../Core/Src/pcb.c:55:15:pcb_i2c_scl_port	4	static
+../Core/Src/pcb.c:60:10:pcb_i2c_scl_pin	4	static
+../Core/Src/pcb.c:65:15:pcb_i2c_sda_port	4	static
+../Core/Src/pcb.c:70:10:pcb_i2c_sda_pin	4	static

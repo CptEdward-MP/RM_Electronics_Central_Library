@@ -1,0 +1,16 @@
+../Core/Src/imu_hw.c:7:20:map_hal_error	7
+../Core/Src/imu_hw.c:33:20:i2c_read	4
+../Core/Src/imu_hw.c:55:20:i2c_write	4
+../Core/Src/imu_hw.c:81:6:hw_i2c_init	3
+../Core/Src/imu_hw.c:95:6:hw_i2c_set_timeouts	2
+../Core/Src/imu_hw.c:112:13:hw_i2c_read_reg	3
+../Core/Src/imu_hw.c:123:13:hw_i2c_write_reg	2
+../Core/Src/imu_hw.c:134:13:hw_i2c_read_multi	4
+../Core/Src/imu_hw.c:146:13:hw_i2c_write_multi	4
+../Core/Src/imu_hw.c:162:13:hw_i2c_probe	3
+../Core/Src/imu_hw.c:176:13:hw_i2c_reinit	3
+../Core/Src/imu_hw.c:188:13:hw_i2c_recover	2
+../Core/Src/imu_hw.c:201:6:hw_i2c_is_timeout	3
+../Core/Src/imu_hw.c:206:6:hw_i2c_no_ack	3
+../Core/Src/imu_hw.c:211:6:hw_i2c_bus_error	3
+../Core/Src/imu_hw.c:216:13:hw_i2c_last_error	2
