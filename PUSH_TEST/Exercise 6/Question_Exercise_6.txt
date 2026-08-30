@@ -1,0 +1,58 @@
+PART A – Generate Simulation Log
+Create a file named:
+simulation.log
+
+Use this test list:
+tests = [
+    ("add_test", 120, "PASS"),
+    ("sub_test", 135, "PASS"),
+    ("branch_test", 180, "FAIL"),
+    ("load_test", 150, "PASS"),
+    ("hazard_test", 210, "FAIL")
+]
+
+
+Write file in this exact format:
+
+Running test: add_test
+RESULT: PASS
+Cycles: 120
+
+Running test: sub_test
+RESULT: PASS
+Cycles: 135
+...
+
+(Blank line between test blocks.)
+
+
+
+PART B – Parse Log and Compute
+-Extract and compute:
+-Total tests run
+-PASS count
+-FAIL count
+-List of failed test names
+-Total cycles (sum)
+-Average cycles
+-Longest running test name
+-Maximum cycle count
+
+
+
+PART C – Required Output Format
+
+Total tests: 5
+PASS: 3
+FAIL: 2
+Failed tests: branch_test, hazard_test
+Total cycles: 795
+Average cycles: 159.00
+Longest test: hazard_test
+Max cycles: 210
+
+
+
+
+Formatting rules:
+Average cycles → 2 decimal places

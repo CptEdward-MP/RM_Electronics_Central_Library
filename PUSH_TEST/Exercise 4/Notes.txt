@@ -1,0 +1,39 @@
+with open("file.txt", "w") as f:
+is mandatory in professional code.It:
+-Automatically closes file
+-Flushes buffer
+-Prevents corruption
+-If you are not using with, you are writing beginner code.
+
+write() does NOT add newline automatically.
+You must manually add \n.
+Common mistake:
+People forget newline → everything becomes one line → parser breaks.
+
+
+Reading Files (Three Ways)
+Method 1 – .read():
+data = f.read()
+
+Method 2 – .readlines():
+lines = f.readlines()
+Each element includes newline at end.
+
+Method 3 – Iterating Directly (Best Practice)
+for line in f:
+    print(line)
+
+
+Extracting Values Properly
+parts = line.split(":")
+value = parts[1].strip()
+wns = float(value)
+
+
+
+
+
+Finding Worst WNS: Sometimes the wns list might be empty so defensively check before taking the min value
+
+if wns_list:
+    worst = min(wns_list)

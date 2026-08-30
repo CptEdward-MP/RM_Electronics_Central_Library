@@ -1,0 +1,28 @@
+File Modes You Must Master
+
+There are several modes beyond just "w" and "r".
+
+-"w" → overwrite file (dangerous if misused)
+
+-"a" → append to file
+
+-"r" → read only
+
+-"r+" → read and write
+
+-"w+" → overwrite + read
+
+Industry mistake example:
+Using "w" accidentally on a golden report can erase critical data.
+
+
+
+
+
+
+with open(...) as f:
+-File is automatically closed.
+
+-If an exception occurs, file still closes.
+
+-Prevents file descriptor leaks.

@@ -1,0 +1,27 @@
+What a Simulation Log Is
+
+When you run RTL simulation (e.g., with VCS, Xcelium, Questa), you typically see logs like:
+
+Running test: add_test
+RESULT: PASS
+Cycles: 120
+
+Running test: branch_test
+RESULT: FAIL
+Cycles: 180
+
+
+Your job as frontend engineer:
+-Extract results
+-Summarize regression
+-Identify failures
+-Track performance
+-Manual reading = waste of time.
+-Automation = leverage.
+
+
+
+Pattern Detection Using startswith()
+
+You already know:
+if line.startswith("Running test:"):

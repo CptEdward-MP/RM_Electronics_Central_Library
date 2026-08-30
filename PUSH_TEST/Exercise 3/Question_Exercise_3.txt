@@ -1,0 +1,133 @@
+File handling.
+
+Almost all real automation involves:
+
+Writing files (Tcl, reports, config files)
+
+Reading reports
+
+Parsing results
+
+This exercise will be foundational.
+
+EXERCISE 3 — File Writing and File Reading
+
+Objective:
+
+Learn how files are opened and closed
+
+Understand write mode vs read mode
+
+Generate structured output files
+
+Read back and process file contents
+
+Prepare for report parsing
+
+Scenario
+
+You are generating a simple timing report file manually (simulating a tool).
+
+You will:
+
+Generate a report file.
+
+Write structured timing data into it.
+
+Read the file back.
+
+Process the contents.
+
+Part A — Write a Timing Report File
+
+Create a file named:
+
+timing_report.txt
+
+Using write mode ("w").
+
+Inside the file, write the following format for each clock:
+
+Clock: <value>
+Frequency: <value>
+WNS: <value>
+Status: PASS or FAIL
+
+Use the same clock_periods list:
+
+[1.0, 1.2, 1.5, 2.0]
+
+Use:
+
+wns = 0.1 - (0.2 * clock)
+
+Status rule:
+PASS if wns >= 0
+FAIL otherwise
+
+Important:
+
+Each configuration should be separated by a blank line.
+
+Use newline characters correctly.
+
+Part B — Read the File
+
+After writing the file:
+
+Open timing_report.txt in read mode.
+
+Read the entire contents.
+
+Print the entire file contents.
+
+Part C — Count PASS and FAIL From File
+
+Now simulate report parsing (simple version).
+
+After reading the file contents into a variable:
+
+Count how many times "PASS" appears.
+
+Count how many times "FAIL" appears.
+
+Print:
+
+Total PASS: X
+Total FAIL: Y
+
+You may use simple string methods like:
+
+.count()
+
+Do NOT use regex yet.
+
+Rules
+
+Use with open(...) as f:
+
+Use f.write()
+
+Use f.read()
+
+Use f-strings
+
+Structure code cleanly
+
+Do not hardcode PASS/FAIL counts
+
+No unnecessary complexity
+
+Concepts You Are Learning
+
+File modes: "w" vs "r"
+
+File overwriting behavior
+
+String formatting with newlines
+
+Basic report parsing
+
+Deterministic output generation
+
+Real automation pattern
